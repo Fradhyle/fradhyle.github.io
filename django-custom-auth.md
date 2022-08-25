@@ -7,8 +7,8 @@
     또한, 기존에 없던 필드를 넣은 경우 ```BaseUserManager```를 상속 받은 클래스의 ```create_user```와 ```create_superuser``` 메서드에 해당 필드를 넣어주어야 한다.
 5. 배치 순서는 ```BaseUserManager```가 먼저, ```AbstractBaseUser```가 나중에 온다.
 ---
-Django 공식 문서의 전체 예제  
-app/models.py
+[Django 공식 문서의 전체 예제](https://docs.djangoproject.com/en/4.1/topics/auth/customizing/#a-full-example)  
+app/models.py  
 ```python
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
@@ -80,9 +80,9 @@ class MyUser(AbstractBaseUser):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
-```
+```  
 app/admins.py  
-여기서 주의사항은 이 예제는 이용자 모델만 바꾸었기 때문에 그룹 관리 기능을 등록 해제한다.
+여기서 주의사항은 이 예제는 이용자 모델만 바꾸었기 때문에 그룹 관리 기능을 등록 해제한다.  
 ```python
 from customauth.models import MyUser
 from django import forms
