@@ -5,7 +5,7 @@
 2. 기존 모델에 필드를 추가하는 경우에는 ```AbstractUser```를, 아예 새로운 모델을 만들 때는 ```AbstractBaseUser```를 상속 받는다
 3. ```AbstractBaseUser```를 상속 받아 이용자 모델을 만들었다면 ```BaseUserManager```를 상속 받은 이용자 모델 관리자를 만들어야 한다.  
     또한, 기존에 없던 필드를 넣은 경우 ```BaseUserManager```를 상속 받은 클래스의 ```create_user```와 ```create_superuser``` 메서드에 해당 필드를 넣어주어야 한다.
-5. 배치 순서는 ```BaseUserManager```가 먼저, ```AbstractBaseUser```가 나중에 온다.
+4. 배치 순서는 ```BaseUserManager```가 먼저, ```AbstractBaseUser```가 나중에 온다.
 ---
 [Django 공식 문서의 전체 예제](https://docs.djangoproject.com/en/4.1/topics/auth/customizing/#a-full-example)  
 app/models.py
