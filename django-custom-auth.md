@@ -8,7 +8,7 @@
 5. 배치 순서는 ```BaseUserManager```가 먼저, ```AbstractBaseUser```가 나중에 온다.
 ---
 [Django 공식 문서의 전체 예제](https://docs.djangoproject.com/en/4.1/topics/auth/customizing/#a-full-example)  
-app/models.py  
+app/models.py
 ```python
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
