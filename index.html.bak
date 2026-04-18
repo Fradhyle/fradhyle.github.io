@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dev Portfolio</title>
+	<style>
+		:root {
+			--bg-color: #1a1a1a;
+			--card-bg: #2d2d2d;
+			--text-color: #ffffff;
+			--accent-color: #e74c3c;
+			--secondary-accent: #3498db;
+			/* IMX 프로젝트용 파란색 포인트 */
+		}
+
+		body {
+			font-family: 'Noto Sans KR', sans-serif;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.container {
+			max-width: 1000px;
+			width: 100%;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 10px;
+		}
+
+		p.subtitle {
+			color: #aaa;
+			margin-bottom: 50px;
+			font-size: 1.1rem;
+		}
+
+		.project-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			justify-content: center;
+		}
+
+		.project-card {
+			background-color: var(--card-bg);
+			border-radius: 15px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			text-decoration: none;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			border: 1px solid #333;
+			height: 100%;
+		}
+
+		.project-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		/* Voo-ong 카드 스타일 */
+		.project-card.voo-ong:hover {
+			border-color: var(--accent-color);
+		}
+
+		.project-card.voo-ong .project-title {
+			color: var(--accent-color);
+		}
+
+		/* IMX 카드 스타일 */
+		.project-card.imx:hover {
+			border-color: var(--secondary-accent);
+		}
+
+		.project-card.imx .project-title {
+			color: var(--secondary-accent);
+		}
+
+		.card-content {
+			padding: 30px;
+			text-align: left;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.project-title {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 10px;
+			transition: color 0.3s;
+		}
+
+		.project-desc {
+			font-size: 0.95rem;
+			color: #ccc;
+			line-height: 1.5;
+			margin-bottom: 20px;
+			flex-grow: 1;
+		}
+
+		.tags {
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+			margin-top: auto;
+		}
+
+		.tag {
+			background-color: #444;
+			padding: 5px 10px;
+			border-radius: 20px;
+			font-size: 0.8rem;
+			color: #ddd;
+		}
+
+		footer {
+			margin-top: auto;
+			padding: 20px;
+			color: #666;
+			font-size: 0.9rem;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Welcome to My Portfolio</h1>
+		<p class="subtitle">데이터 엔지니어링 & 백엔드 개발 프로젝트 아카이브</p>
+
+		<div class="project-grid">
+			<a href="/Voo-ong" class="project-card voo-ong">
+				<div class="card-content">
+					<div class="project-title">Voo-ong 🦉</div>
+					<p class="project-desc">
+						타인의 평점을 배제하고 오직 개인의 데이터만을 분석하는
+						개인 맞춤형 영화 추천 시스템입니다.
+					</p>
+					<div class="tags">
+						<span class="tag">Hadoop</span>
+						<span class="tag">TensorFlow</span>
+						<span class="tag">Recommendation System</span>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://github.com/Fradhyle/IMX" class="project-card imx" target="_blank">
+				<div class="card-content">
+					<div class="project-title">IMX Project 📅</div>
+					<p class="project-desc">
+						학원 및 교습소 현장을 위한 <strong>예약 일정 통합 관리 시스템</strong>입니다.<br>
+						이용자/지점 DB 구축 및 웹사이트를 통한 효율적인 일정 관리를 목표로 합니다.
+					</p>
+					<div class="tags">
+						<span class="tag">Python</span>
+						<span class="tag">Django</span>
+						<span class="tag">Web Development</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<footer>
+		&copy; <span id="year"></span>. All rights reserved.
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+
+</body>
+
+</html>
