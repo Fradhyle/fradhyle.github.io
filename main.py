@@ -19,7 +19,7 @@ def read_root(lang: str = "ko"):
         html_content = Path("index_en.html").read_text("utf-8")
         return HTMLResponse(content=html_content)
     else:
-        html_content = Path("index_ko.html").read_text("utf-8")
+        html_content = Path("index.html").read_text("utf-8")
         return HTMLResponse(content=html_content)
 
 
