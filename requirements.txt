@@ -1,0 +1,3 @@
+fastapi
+workers-py
+workers-runtime-sdk
