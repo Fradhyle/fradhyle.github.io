@@ -4,51 +4,653 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fradhyle - Portfolio Links</title>
-	<link rel="stylesheet" href="/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>Donghyeok Im (Fradhyle) | Technical PM · DataOps &amp; Automation Portfolio</title>
+	<meta name="description"
+		content="Integrated portfolio of Donghyeok Im — Technical PM &amp; DataOps specialist experienced in e-commerce catalog standardization, SQL/Python workflow automation, web/DB server architecture, and 10+ years of IT localization.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="alternate" hreflang="ko" href="index.html">
+	<link rel="alternate" hreflang="en" href="index_en.html">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="profile-img">
-			🧑‍💻
+	<!-- Top Fixed Navigation -->
+	<header class="site-header">
+		<div class="nav-container">
+			<a href="#top" class="nav-brand">
+				<span class="brand-dot"></span>
+				<span>Donghyeok Im</span>
+				<span class="brand-tag">Fradhyle</span>
+			</a>
+			<nav aria-label="Primary Navigation">
+				<ul class="nav-menu">
+					<li><a href="#about">Competencies</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects &amp; Architecture</a></li>
+					<li><a href="#localization">Localization</a></li>
+					<li><a href="#credentials">Credentials &amp; Stack</a></li>
+				</ul>
+			</nav>
+			<div class="nav-actions">
+				<div class="lang-switch" aria-label="Language Switcher">
+					<a href="index.html" lang="ko" hreflang="ko" title="한국어 버전 보기">KR</a>
+					<span class="active">EN</span>
+				</div>
+				<a href="https://github.com/Fradhyle" target="_blank" rel="noopener" class="btn-outline">GitHub ↗</a>
+				<a href="mailto:fradhyle@gmail.com" class="btn-primary">Contact</a>
+			</div>
 		</div>
-		<h1>Fradhyle</h1>
-		<p class="description">
-			Freelance Translator & Python Developer & AI Engineer<br>
-			Translation portfolio and Development project archive.
-		</p>
+	</header>
 
-		<div class="link-container">
-			
-			<a href="여기에_이력서_URL_입력" class="link-btn btn-translation" target="_blank">
-				📝 이력서
-			</a>
+	<main id="top">
 
-			<a href="https://github.com/Fradhyle/IMX" class="link-btn btn-imx" target="_blank">
-				📅 IMX (Integrated schedule management for tutoring facility)
-			</a>
+		<!-- ==================== HERO SECTION ==================== -->
+		<section class="hero-section">
+			<div class="container hero-grid">
+				<div class="hero-content">
+					<div class="pill-row">
+						<span class="pill pill-blue">Technical PM</span>
+						<span class="pill pill-green">DataOps &amp; Catalog QA</span>
+						<span class="pill pill-purple">Python / SQL Automation</span>
+						<span class="pill pill-amber">IT Localization (10+ Yrs)</span>
+					</div>
+					<h1 class="hero-title">
+						Bridging Operations &amp; Tech:<br>
+						<span class="gradient-text">Solving Bottlenecks with Data &amp; Code</span>
+					</h1>
+					<p class="hero-desc">
+						A versatile Technical PM and DataOps practitioner with hands-on experience in e-commerce product
+						catalog standardization, internal admin unification, Oracle/Hadoop data extraction, Python &amp;
+						Selenium automation (RPA), and self-hosted web/RDBMS infrastructure.
+					</p>
+					<div class="hero-cta">
+						<a href="#experience" class="btn-primary btn-lg">Explore Work Experience ↓</a>
+						<a href="https://fradhyle.github.io/Voo-ong/" target="_blank" rel="noopener"
+							class="btn-outline btn-lg">Voo-ong Project Deck ↗</a>
+					</div>
+					<div class="lang-notice" lang="ko">
+						<span>🇰🇷 한국어 페이지를 찾으시나요?</span>
+						<a href="index.html" hreflang="ko">한국어 포트폴리오로 이동 (KR) →</a>
+					</div>
+				</div>
 
-			<a href="/Voo-ong" class="link-btn btn-voo-ong">
-				🦉 Voo-ong (Personalized recommendation for movies)
-			</a>
+				<aside class="hero-summary-card" aria-label="Profile Summary">
+					<div class="card-header-bar">
+						<span class="terminal-dots"><i></i><i></i><i></i></span>
+						<span class="mono"
+							style="font-size: 0.78rem; color: var(--text-muted);">profile_summary.json</span>
+					</div>
+					<div class="summary-body">
+						<div class="summary-item">
+							<span class="summary-label">Name</span>
+							<span class="summary-value">Donghyeok Im (임동혁)</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Focus Areas</span>
+							<span class="summary-value">Catalog/Data QA · Admin PM · DataOps · RPA</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Core Stack</span>
+							<span class="summary-value mono">Python · SQL(Oracle/MS-SQL) · Hive · Databricks</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Infra &amp; Web</span>
+							<span class="summary-value mono">Linux · NGINX · Apache · IIS · MySQL/MariaDB</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Certifications</span>
+							<span class="summary-value">Engineer Big Data Analysis · Information Processing</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Language</span>
+							<span class="summary-value">TOEIC 950 · TOEIC Speaking IH (150)</span>
+						</div>
+						<div class="summary-item">
+							<span class="summary-label">Contact</span>
+							<span class="summary-value"><a
+									href="mailto:fradhyle@gmail.com">fradhyle@gmail.com</a></span>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
 
-			<a href="https://github.com/Fradhyle" class="link-btn" target="_blank">
-				💻 GitHub Profile
-			</a>
+		<!-- ==================== ABOUT / CORE PILLARS ==================== -->
+		<section id="about" class="section">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-kicker">Core Competencies</span>
+					<h2>Four Core Pillars of Execution</h2>
+					<p>Connecting operational precision with data pipelines, server infrastructure, and cross-border
+						technical communication.</p>
+				</div>
 
+				<div class="grid-4">
+					<article class="card pillar-card">
+						<div class="icon-box blue">🗂️</div>
+						<h3>Catalog &amp; Data Quality PM</h3>
+						<p>Spent 2 years on Gmarket's Search Planning Team leading product attribute standardization,
+							AI-driven product matching/QA planning, and unifying three fragmented catalog admin tools
+							into a single platform.</p>
+					</article>
+
+					<article class="card pillar-card">
+						<div class="icon-box green">⚙️</div>
+						<h3>SQL &amp; Python Automation</h3>
+						<p>Extracted large-scale datasets from Oracle, MS-SQL, Hadoop (Hive), and Databricks, building
+							Pandas ETL scripts and Selenium + JavaScript DOM automation tools for QA and daily
+							operations.</p>
+					</article>
+
+					<article class="card pillar-card">
+						<div class="icon-box purple">🖥️</div>
+						<h3>Web Server &amp; RDBMS Setup</h3>
+						<p>Hands-on background configuring IIS, Apache HTTPD, and NGINX reverse proxies alongside MySQL
+							and MariaDB on Windows and Linux—enabling clear, friction-free collaboration with
+							engineering teams.</p>
+					</article>
+
+					<article class="card pillar-card">
+						<div class="icon-box amber">🌐</div>
+						<h3>Global IT Localization</h3>
+						<p>Korean localizer for encrypted cloud platform MEGA since 2013, maintaining consistent
+							technical terminology and effortlessly reading English specifications, documentation, and
+							research papers.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== WORK EXPERIENCE ==================== -->
+		<section id="experience" class="section section-alt">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-kicker">Work Experience</span>
+					<h2>Professional Experience &amp; Impact</h2>
+					<p>Focused on improving data quality, consolidating operational workflows, and automating repetitive
+						processes.</p>
+				</div>
+
+				<div class="timeline">
+
+					<!-- Experience 1: Gmarket -->
+					<article class="timeline-card">
+						<div class="timeline-meta">
+							<span class="period mono">2022.09 — 2024.09</span>
+							<span class="role-badge">Search Planning Team · Product Manager / DataOps</span>
+						</div>
+						<div class="timeline-content">
+							<h3>Gmarket Inc.</h3>
+							<p class="company-sub">E-Commerce Search &amp; Product Catalog Standardization, Admin Tool
+								Unification PM, and QA Automation</p>
+
+							<div class="exp-grid">
+								<div class="exp-block">
+									<h4>📌 Catalog Admin &amp; Form Unification Project (PM)</h4>
+									<ul>
+										<li><strong>Problem Definition:</strong> Separate, inconsistent catalog creation
+											and modification forms across three fragmented admin tools caused operator
+											confusion and processing bottlenecks.</li>
+										<li><strong>Execution:</strong> Standardized editable data attributes and
+											unified the creation/editing schemas, leading cross-functional alignment
+											with engineers to consolidate all three admin tools into one cohesive
+											platform.</li>
+										<li><strong>Outcome:</strong> Eliminated cross-tool context switching and schema
+											mismatch errors, improving operational efficiency and operator satisfaction.
+										</li>
+									</ul>
+								</div>
+
+								<div class="exp-block">
+									<h4>🤖 Python &amp; Selenium QA / Operations Automation (RPA)</h4>
+									<ul>
+										<li><strong>Search Filter E2E Test Automation:</strong> Built automated
+											regression scripts using Selenium and JavaScript DOM manipulation to
+											systematically toggle and verify search result filters on dynamic e-commerce
+											pages.</li>
+										<li><strong>Semi-Structured Data Wrangling:</strong> Developed Pandas pipelines
+											to merge multi-source spreadsheets and reformat schemas into standardized
+											catalog templates, significantly reducing repetitive manual work.</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="exp-extra">
+								<ul>
+									<li><strong>Product Data Standardization &amp; AI Inspection Planning:</strong>
+										Established standardization rules for manufacturer, brand, title, and core
+										product attributes; analyzed large datasets via Hadoop (Hive) and Databricks;
+										planned AI-powered auto-classification and similar-product grouping services,
+										and managed seller image guideline compliance workflows.</li>
+								</ul>
+							</div>
+
+							<div class="tag-list">
+								<span class="tech-tag">SQL (Oracle)</span>
+								<span class="tech-tag">Hadoop (Hive)</span>
+								<span class="tech-tag">Databricks</span>
+								<span class="tech-tag">Python (Pandas · Selenium)</span>
+								<span class="tech-tag">JavaScript</span>
+								<span class="tech-tag">Catalog QA &amp; PM</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Experience 2: ParkingCloud -->
+					<article class="timeline-card">
+						<div class="timeline-meta">
+							<span class="period mono">2021.12 — 2022.03</span>
+							<span class="role-badge">R&amp;D Division Platform Team · Manager</span>
+						</div>
+						<div class="timeline-content">
+							<h3>ParkingCloud Co., Ltd.</h3>
+							<p class="company-sub">Computer Vision AI Solutions for Smart Parking Control &amp; Safety
+							</p>
+							<ul>
+								<li><strong>License Plate Recognition AI:</strong> Developed and maintained
+									Darknet/YOLOv4 models to detect and recognize license plate characters from fixed
+									parking camera video streams.</li>
+								<li><strong>Driver Privacy De-Identification AI:</strong> Planned and implemented
+									computer vision models to automatically detect vehicle drivers and anonymize faces
+									in real time.</li>
+								<li><strong>Pedestrian Safety Gate Control:</strong> Built safety detection logic to
+									prevent parking barrier gates from opening when pedestrians are identified nearby.
+								</li>
+							</ul>
+							<div class="tag-list">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">OpenCV</span>
+								<span class="tech-tag">Darknet / YOLOv4</span>
+								<span class="tech-tag">Computer Vision</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Experience 3: KAIT -->
+					<article class="timeline-card">
+						<div class="timeline-meta">
+							<span class="period mono">2021.06 — 2021.12</span>
+							<span class="role-badge">Distribution Network Infrastructure Team · Researcher</span>
+						</div>
+						<div class="timeline-content">
+							<h3>Korea Association for ICT Promotion (KAIT)</h3>
+							<p class="company-sub">Oracle RDB Statistical Reporting &amp; Administrative RPA Development
+							</p>
+							<ul>
+								<li><strong>Statistical Extraction &amp; Workflow RPA:</strong> Developed Python RPA
+									tools to extract statistical records from internal portals into standardized
+									spreadsheets and automate spreadsheet-driven administrative tasks.</li>
+								<li><strong>Oracle RDB Data Extraction:</strong> Authored SQL queries against Oracle
+									database servers to retrieve operational data and compile regulatory compliance
+									statistics.</li>
+								<li><strong>Regulatory Program Operations:</strong> Managed ID scanner compliance
+									(investigating device/IP cloning violations and deposit settlements) and enforcement
+									under the Mobile Device Distribution Improvement Act.</li>
+							</ul>
+							<div class="tag-list">
+								<span class="tech-tag">Python (Pandas · Selenium)</span>
+								<span class="tech-tag">SQL (Oracle)</span>
+								<span class="tech-tag">RPA Automation</span>
+								<span class="tech-tag">Data Reporting</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Experience 4: Gyeonggi Provincial Government -->
+					<article class="timeline-card">
+						<div class="timeline-meta">
+							<span class="period mono">2018.09 — 2020.12</span>
+							<span class="role-badge">Planning Officer Division · Tax Justice Division</span>
+						</div>
+						<div class="timeline-content">
+							<h3>Gyeonggi Provincial Government</h3>
+							<p class="company-sub">Multi-Municipality Program Data Coordination &amp; Public Policy
+								Support</p>
+							<ul>
+								<li><strong>31-Municipality Joint Initiative Coordination:</strong> Supported the
+									province-wide "Tax Delinquency Management Team" program across 31 cities and
+									counties—leading "Gyeonggi Tax Smart" branding, training municipal coordinators, and
+									aggregating regional performance datasets.</li>
+								<li><strong>Policy Research &amp; Digital Communications:</strong> Assisted policy
+									research and event operations in the Planning Division and managed departmental SNS
+									channels (recognized with an overseas training award for top 2018 departmental SNS
+									performance).</li>
+							</ul>
+							<div class="tag-list">
+								<span class="tech-tag">Cross-Functional Coordination</span>
+								<span class="tech-tag">Data Aggregation</span>
+								<span class="tech-tag">Policy &amp; Brand Ops</span>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== PROJECTS & TECHNICAL ARCHITECTURE ==================== -->
+		<section id="projects" class="section">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-kicker">Projects &amp; Engineering Architecture</span>
+					<h2>Featured Projects &amp; Technical Architecture</h2>
+					<p>Select a tab below to inspect system designs, data workflows, and engineering problem-solving
+						details.</p>
+				</div>
+
+				<!-- Pure CSS Interactive Tabs -->
+				<div class="css-tabs">
+					<input type="radio" name="proj-tabs" id="tab-vooong" checked>
+					<label for="tab-vooong" class="tab-label">01. Voo-ong (Big Data &amp; Deep Learning Movie
+						Recommender)</label>
+
+					<input type="radio" name="proj-tabs" id="tab-rpa">
+					<label for="tab-rpa" class="tab-label">02. Enterprise SQL &amp; Python RPA Pipeline</label>
+
+					<input type="radio" name="proj-tabs" id="tab-infra">
+					<label for="tab-infra" class="tab-label">03. Self-Hosted Web Servers (IIS·Apache·NGINX) &amp;
+						RDBMS</label>
+
+					<!-- Panel 1: Voo-ong -->
+					<div id="panel-vooong" class="tab-content card">
+						<div class="proj-header">
+							<div>
+								<span class="pill pill-blue">Team Leader (PM)</span>
+								<span class="pill pill-purple">Hadoop · Hive · Sqoop</span>
+								<span class="pill pill-green">Python · Keras</span>
+								<h3 style="margin-top: 8px; font-size: 1.35rem;">Voo-ong — Personalized Movie
+									Recommendation System Built on 28M Ratings &amp; Crew Metadata</h3>
+							</div>
+							<div class="proj-links">
+								<a href="https://fradhyle.github.io/Voo-ong/" target="_blank" rel="noopener"
+									class="btn-primary">View Presentation Deck ↗</a>
+								<a href="https://github.com/Fradhyle/Voo-ong" target="_blank" rel="noopener"
+									class="btn-outline">GitHub Repo ↗</a>
+							</div>
+						</div>
+
+						<div class="grid-3" style="margin-top: 18px;">
+							<div class="sub-box">
+								<h4>🏗️ Cloud-to-On-Premises Cluster Pivot</h4>
+								<p>Diagnosed escalating cloud costs on Microsoft Azure IaaS and migrated to a local
+									high-spec <strong>VirtualBox CentOS 7 multi-node cluster (Cloudera CDH 6.3.1 /
+										Ambari)</strong> paired with an <strong>NGINX + Node.js</strong> reverse
+									proxy—processing 28M ratings at zero recurring infrastructure cost.</p>
+							</div>
+							<div class="sub-box">
+								<h4>⚡ Multi-Threaded ETL &amp; Package Refactoring</h4>
+								<p>Unified MovieLens, IMDb, and Naver Movie schemas into 37 standardized genres
+									(<code>voo_ong.genres</code>) and refactored prototype Jupyter Notebooks into a
+									modular <strong>Python CLI package (<code>Apps/pylib</code>)</strong> featuring
+									<code>ThreadPoolExecutor</code> concurrency and automatic 5x retry queues.</p>
+							</div>
+							<div class="sub-box">
+								<h4>🧠 Multi-Label Deep Learning &amp; PM Leadership</h4>
+								<p>Normalized user ratings via <code>MinMaxScaler</code> and 4:2:4 sentiment binning
+									(<code>+1/0/-1</code>) across 22.75M samples to train a Keras multi-label classifier
+									achieving <strong>86.86% validation accuracy (Adam)</strong>, while authoring a
+									200-page deployment manual to align team execution.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Panel 2: Enterprise Data & RPA Pipeline -->
+					<div id="panel-rpa" class="tab-content card">
+						<div class="proj-header">
+							<div>
+								<span class="pill pill-green">DataOps &amp; Automation</span>
+								<span class="pill pill-blue">Oracle · MS-SQL · Hive · Databricks</span>
+								<h3 style="margin-top: 8px; font-size: 1.35rem;">Production SQL Data Extraction &amp;
+									Python · Selenium QA/Ops Automation Workflow</h3>
+							</div>
+						</div>
+						<p style="color: var(--text-muted); margin: 10px 0 18px;">
+							End-to-end data wrangling and browser automation architecture designed to eliminate
+							repetitive manual verification and reporting bottlenecks at Gmarket and KAIT.
+						</p>
+						<div class="pipeline-flow">
+							<div class="pipe-node">
+								<span class="mono step">STAGE 01</span>
+								<h4>RDBMS &amp; DW Querying</h4>
+								<p>Extracted raw product attribute and regulatory datasets via multi-table joins and
+									aggregations in <code>Oracle SQL Developer</code>, <code>SSMS</code>,
+									<code>Hadoop (Hive)</code>, and <code>Databricks</code>.</p>
+							</div>
+							<div class="pipe-arrow">→</div>
+							<div class="pipe-node">
+								<span class="mono step">STAGE 02</span>
+								<h4>Pandas Semi-Structured ETL</h4>
+								<p>Automated multi-file spreadsheet I/O, cross-source key mapping/merging, and schema
+									reformatting into standardized catalog and reporting templates.</p>
+							</div>
+							<div class="pipe-arrow">→</div>
+							<div class="pipe-node">
+								<span class="mono step">STAGE 03</span>
+								<h4>Selenium + JS DOM Control</h4>
+								<p>Executed automated workflows on legacy web portals without APIs and ran E2E
+									regression checks on dynamic e-commerce search result filters.</p>
+							</div>
+							<div class="pipe-arrow">→</div>
+							<div class="pipe-node">
+								<span class="mono step">STAGE 04</span>
+								<h4>QA Validation &amp; RCA Output</h4>
+								<p>Detected attribute anomalies early, generated catalog matching consistency reports,
+									and supported root-cause analysis (RCA) of operational defects.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Panel 3: Self-Hosted Server & DBMS -->
+					<div id="panel-infra" class="tab-content card">
+						<div class="proj-header">
+							<div>
+								<span class="pill pill-purple">System &amp; DB Administration</span>
+								<span class="pill pill-amber">IIS · Apache · NGINX · MySQL/MariaDB</span>
+								<h3 style="margin-top: 8px; font-size: 1.35rem;">Self-Hosted Multi-Platform Web Servers
+									&amp; Relational Databases</h3>
+							</div>
+						</div>
+						<p style="color: var(--text-muted); margin: 10px 0 18px;">
+							Built and maintained personal web services and project environments from scratch across both
+							Windows and Linux ecosystems.
+						</p>
+						<div class="grid-3">
+							<div class="sub-box">
+								<h4>🌐 Web Servers &amp; Reverse Proxy</h4>
+								<p>Configured and operated <strong>IIS</strong> on Windows as well as <strong>Apache
+										HTTPD</strong> and lightweight <strong>NGINX</strong> on Linux, managing domain
+									bindings and reverse-proxy routing to Node.js and PHP backends.</p>
+							</div>
+							<div class="sub-box">
+								<h4>🗄️ RDBMS Deployment &amp; Schema Design</h4>
+								<p>Installed and administered <strong>MySQL</strong> and <strong>MariaDB</strong>
+									instances, designing relational schemas (ERDs), configuring <code>utf8mb4</code>
+									character sets, managing user privileges, and deploying <code>phpMyAdmin</code> web
+									interfaces.</p>
+							</div>
+							<div class="sub-box">
+								<h4>🐧 Multi-OS &amp; Cloud Environments</h4>
+								<p>Proficient across Windows Server and Linux distributions (<strong>Ubuntu, CentOS, Red
+										Hat, Fedora</strong>) CLI administration, as well as provisioning cloud
+									compute/network resources on <strong>Azure, AWS, and GCP</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== GLOBAL LOCALIZATION ==================== -->
+		<section id="localization" class="section section-alt">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-kicker">Global IT Localization &amp; Communication</span>
+					<h2>Global IT Service Localization Experience</h2>
+					<p>Over a decade of English-to-Korean localization for a global cloud security platform, building
+						strong technical reading fluency and cross-cultural communication skills.</p>
+				</div>
+
+				<div class="card localization-card">
+					<div class="loc-grid">
+						<div>
+							<div class="pill-row">
+								<span class="pill pill-amber">2013.10 — Present (10+ Years)</span>
+								<span class="pill pill-blue">Freelance Korean Localizer</span>
+							</div>
+							<h3 style="font-size: 1.4rem; margin: 10px 0 8px;">MEGA Privacy — English-to-Korean Product
+								Localization &amp; Technical Translation</h3>
+							<p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 14px;">
+								Serving as a long-term freelance Korean localizer for <strong>MEGA</strong>, a global
+								end-to-end encrypted cloud storage and communication platform. Responsible for
+								translating and reviewing web/mobile UI strings, security and network configuration
+								guides, help center articles, and feature release notes for Korean users.
+							</p>
+							<ul class="loc-list">
+								<li><strong>Cloud &amp; Security Terminology Standardization:</strong> Maintained
+									consistent Korean glossaries across encryption, file synchronization, WebDAV/FUSE
+									mounts, and access control features.</li>
+								<li><strong>Global Documentation &amp; Stakeholder Fluency:</strong> Backed by TOEIC 950
+									and TOEIC Speaking Intermediate High (150), enabling rapid comprehension of English
+									engineering specs, open-source docs, and global team communications.</li>
+							</ul>
+						</div>
+
+						<div class="loc-stats-box">
+							<div class="stat-item">
+								<span class="stat-num">13+ Yrs</span>
+								<span class="stat-desc">Continuous IT Localization Partnership (2013–Present)</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-num">950</span>
+								<span class="stat-desc">TOEIC Official Score</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-num">IH (150)</span>
+								<span class="stat-desc">TOEIC Speaking Business Communication Proficiency</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== CREDENTIALS & SKILLS ==================== -->
+		<section id="credentials" class="section">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-kicker">Education · Certifications · Tech Stack</span>
+					<h2>Education, Certifications &amp; Technical Skills</h2>
+				</div>
+
+				<div class="grid-2" style="margin-bottom: 24px;">
+					<div class="card">
+						<h3>🎓 Education &amp; Specialized Training</h3>
+						<ul class="cred-list">
+							<li>
+								<div class="cred-title">Korea University (Seoul) — B.A. in Business Administration</div>
+								<div class="cred-meta mono">2014.03 — 2016.02</div>
+							</li>
+							<li>
+								<div class="cred-title">Python Big Data Development &amp; Analytics Specialist Program
+								</div>
+								<div class="cred-meta">TheJoeun Computer Academy Gangnam · Python ML/DL, SQL
+									Administration &amp; Tuning, Hadoop Web Integration (<span class="mono">2019.12 —
+										2020.06</span>)</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>🏅 National Certifications &amp; Language</h3>
+						<ul class="cred-list">
+							<li>
+								<div class="cred-title">Engineer Big Data Analysis (빅데이터분석기사) <span
+										class="badge-inline">National License</span></div>
+								<div class="cred-meta">Korea Data Agency (K-DATA) · <span class="mono">Issued Dec
+										2021</span></div>
+							</li>
+							<li>
+								<div class="cred-title">Engineer Information Processing (정보처리기사) <span
+										class="badge-inline">National License</span></div>
+								<div class="cred-meta">Human Resources Development Service of Korea · <span
+										class="mono">Issued Oct 2015</span></div>
+							</li>
+							<li>
+								<div class="cred-title">TOEIC 950 · TOEIC Speaking 150 (Intermediate High)</div>
+								<div class="cred-meta">ETS / YBM Korea TOEIC Committee</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="grid-3">
+					<div class="card skill-card">
+						<h3>📊 Data &amp; Database</h3>
+						<p class="skill-desc">Relational DB querying/administration &amp; distributed big data
+							extraction</p>
+						<div class="tag-list">
+							<span class="tech-tag">Oracle SQL</span>
+							<span class="tech-tag">MS-SQL (SSMS)</span>
+							<span class="tech-tag">MySQL / MariaDB</span>
+							<span class="tech-tag">Hadoop (Hive)</span>
+							<span class="tech-tag">Databricks</span>
+							<span class="tech-tag">ERD Design</span>
+						</div>
+					</div>
+
+					<div class="card skill-card">
+						<h3>💻 Python &amp; Automation</h3>
+						<p class="skill-desc">Data wrangling, web scraping, QA/ops RPA &amp; CV/ML model application</p>
+						<div class="tag-list">
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Pandas / NumPy</span>
+							<span class="tech-tag">Selenium</span>
+							<span class="tech-tag">JavaScript / HTML5 / CSS3</span>
+							<span class="tech-tag">Java / PHP</span>
+							<span class="tech-tag">OpenCV / YOLO / Keras</span>
+						</div>
+					</div>
+
+					<div class="card skill-card">
+						<h3>🛠️ Server, Cloud &amp; Dev Tools</h3>
+						<p class="skill-desc">Multi-OS server deployment, version control &amp; development tooling</p>
+						<div class="tag-list">
+							<span class="tech-tag">Linux (Ubuntu · CentOS)</span>
+							<span class="tech-tag">Windows Server</span>
+							<span class="tech-tag">NGINX / Apache / IIS</span>
+							<span class="tech-tag">Azure / AWS / GCP</span>
+							<span class="tech-tag">Git / GitHub</span>
+							<span class="tech-tag">VS Code / JetBrains</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- ==================== FOOTER ==================== -->
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div>
+				<strong>Donghyeok Im (임동혁)</strong> · Technical PM &amp; DataOps Portfolio
+			</div>
+			<div class="footer-links">
+				<a href="index.html" lang="ko" hreflang="ko">한국어 버전 (KR)</a>
+				<span>·</span>
+				<a href="mailto:fradhyle@gmail.com">fradhyle@gmail.com</a>
+				<span>·</span>
+				<a href="https://github.com/Fradhyle" target="_blank" rel="noopener">GitHub (@Fradhyle)</a>
+				<span>·</span>
+				<a href="https://fradhyle.github.io/Voo-ong/" target="_blank" rel="noopener">Voo-ong Project</a>
+			</div>
 		</div>
-	</div>
-
-	<footer>
-		&copy; <span id="year"></span> Fradhyle. All rights reserved.
 	</footer>
-
-	<script>
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
 
 </body>
 
