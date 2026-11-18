@@ -904,3 +904,103 @@ code,
 		padding: 20px 18px;
 	}
 }
+
+/* ==================== CONTACT CARD ==================== */
+.contact-card {
+	border-left: 4px solid var(--accent-blue);
+	background: linear-gradient(135deg, rgba(22, 32, 51, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 0.85fr;
+	gap: 24px;
+	align-items: center;
+}
+
+.contact-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media (max-width: 960px) {
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.contact-steps {
+	padding-left: 18px;
+	margin-top: 6px;
+}
+
+.contact-steps li {
+	font-size: 0.9rem;
+	color: var(--text-body);
+	line-height: 1.7;
+	margin-bottom: 8px;
+}
+
+.contact-steps li:last-child {
+	margin-bottom: 0;
+}
+
+.contact-steps a {
+	color: var(--accent-blue);
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+
+	.site-header,
+	.hero-cta,
+	.proj-links,
+	.contact-actions,
+	.lang-notice {
+		display: none !important;
+	}
+
+	body,
+	.section,
+	.section-alt,
+	.hero-section {
+		background: #ffffff !important;
+		color: #000000 !important;
+		padding: 18px 0 !important;
+	}
+
+	.card,
+	.timeline-card,
+	.hero-summary-card,
+	.exp-block,
+	.sub-box,
+	.pipe-node,
+	.stat-item,
+	.contact-card {
+		background: #ffffff !important;
+		color: #000000 !important;
+		border: 1px solid #cccccc !important;
+		box-shadow: none !important;
+	}
+
+	.gradient-text,
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	li,
+	span,
+	a {
+		color: #000000 !important;
+		-webkit-text-fill-color: #000000 !important;
+	}
+
+	.css-tabs .tab-content {
+		display: block !important;
+		margin-bottom: 16px;
+	}
+}
