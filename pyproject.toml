@@ -1,0 +1,11 @@
+[project]
+name = "portfolio"
+dynamic = ["version"]
+version = "0.1.0"
+description = "Cloudflare Workers project for portfolio"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["fastapi"]
+
+[dependency-groups]
+dev = ["workers-py", "workers-runtime-sdk"]
